@@ -1,0 +1,8 @@
+<launch>
+	<node pkg="joy" type="joy_node" name="ps4_joy" >
+	<param name="dev" type="string" value="/dev/input/js0" />
+	<param name="deadzone" value="0.12" />
+	</node>
+	
+	<node pkg="teleop_joy" type="teleop_joy.py" name="teleop_joy_car" />
+</launch>
